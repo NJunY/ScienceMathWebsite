@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: "montserrat", sans-serif;
+	}
+	.header{
+		height: 100px;
+		background: #34495e;
+		padding: 0 20px;
+		color: #ffff;
+	}
+	.logo{
+		line-height: 100px;
+		float: left;
+		text-transform: uppercase;
+	}
+	.menu{
+		float: right;
+		line-height: 100px;
+	}
+	.menu a{
+		color: #ffff;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 0 10px;
+		transition: 0.4s;
+	}
+	.show-menu-btn, .hide-menu-btn{
+		transition: 0.4s;
+		font-size: 30px;
+		cursor: pointer;
+		display: none;
+	}
+	.show-menu-btn{
+		float: right;
+	}
+	.show-menu-btn i{
+		line-height: 100px;
+	}
+	.menu a:hover, .show-menu-btn, .hide-menu-btn{
+		color: #3498db;
+	}
+	#chk{
+		position: absolute;
+		visibility: hidden;
+		z-index: -1111;
+	}
+		.donate{
+			text-align: center;
+			background-color: #126CB0;
+			border: 15px solid #2981D2 ;
+			margin-left: 200px;
+			margin-right: 250px;
+			margin-top: 50px;
+		}
+		.btn{
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background: #e74c3c;
+			color: white;
+			padding: 10px 30px;
+			cursor: pointer;
+		}
+		#box{
+			width: 500px;
+			overflow: hidden;
+			background: #f1f1f1;
+			box-shadow: 0 0 20px black;
+			border-radius: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50% -50%);
+			z-index: 9999;
+			padding: 10px;
+			text-align: center;
+			display: none;
+		}
+		
+		#box span{
+			color: #2ecc71;
+			fonr-size: 40px;
+			display: block;
+			margin: 20px 0;
+		}
+		
+		#box1 h1{
+			color: #333;
+		}
+		.close{
+			font-size: 18px;
+			color: white;
+			padding: 10px 20px;
+			cursor: pointer;
+			background: #3498db;
+			display: inline-block;
+			border-radius: 4px;
+		}
+		body{
+			background-image: url('back.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h2 class="logo"><img src="logo.png" width="240px;"></h2>
+		<input type="checkbox" id="chk">
+		<label for="chk" class="show-menu-btn">
+			<i class="fas fa-ellipsis-h"></i>
+		</label>
+		<ul class="menu">
+			<a href="Home.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<a href="donate.html">Donate</a>
+			<a href="Subject.html">Subject</a>
+			<label for="chk" class="hide-menu-btn">
+				<i class="fas fa-times"></i>
+			</label>
+		</ul>
+	</div>
+	<div class="donate">
+	<form action="#" method="post" onSubmit=" return validation();">
+	<h2><br><br><br><strong>WE NEED YOUR HELP PLEASE</strong></h2>
+	<h3><br><br>Name: </h3>
+	<input type="text" name="name" id="name">
+	<h3><br>Email: </h3>
+	<input type="email" name="email" id="email">
+	<h3><br>Name of Bank: </h3>
+	<input type="text" name="bank" id="bank">
+	<h3><br>Bank Account Number: </h3>
+	<input type="text" name="acc" id="acc" >
+	<h3><br>Amount:</h3>
+	<input type="text" name="amount" id="amount">
+	<p><br></p>
+	<a  onclick="pop()" class="btn">Submit</a>
+	
+	<div id="box">
+	<span class="ion-checkmark-round"></span>
+	<h2>Good Job</h2>
+		
+	<a class="close">Close</a>
+	</div>
+	</form>
+	</div>
+	<script type="text/javascript">
+		var c = 0;
+		function pop(){
+			if(c == 0){
+				document.getElementById("box").style.display = "block";
+				c = 1;
+			}
+			else{
+				document.getElementById("box").style.display = "none";
+				c = 0;
+			}
+		}
+	</script>
+	
+</body>
+</html>

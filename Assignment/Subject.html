@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Subject</title>
+	<style>
+	body{
+			background-image: url('back.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: "montserrat", sans-serif;
+	}
+	.header{
+		height: 100px;
+		background: #34495e;
+		padding: 0 20px;
+		color: #ffff;
+	}
+	.logo{
+		line-height: 100px;
+		float: left;
+		text-transform: uppercase;
+	}
+	.menu{
+		float: right;
+		line-height: 100px;
+	}
+	.menu a{
+		color: #ffff;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 0 10px;
+		transition: 0.4s;
+	}
+	.show-menu-btn, .hide-menu-btn{
+		transition: 0.4s;
+		font-size: 30px;
+		cursor: pointer;
+		display: none;
+	}
+	.show-menu-btn{
+		float: right;
+	}
+	.show-menu-btn i{
+		line-height: 100px;
+	}
+	.menu a:hover, .show-menu-btn, .hide-menu-btn{
+		color: #3498db;
+	}
+	#chk{
+		position: absolute;
+		visibility: hidden;
+		z-index: -1111;
+	}
+		.mm, .sc{
+			background-color: #61A7D8;
+			margin-top: 150px;
+			text-align: center;
+			margin-left: 20pc;
+			margin-right: 19pc;
+		}
+		.mm a{
+			text-decoration: none;
+			color: #42434E;
+		}
+		.sc a{
+			text-decoration: none;
+			color: #42434E;
+		}
+		.content{
+			background-color:#0D1279;
+			margin-left: 20pc;
+			margin-right: 20pc;
+			color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h2 class="logo"><a href="Home.html"><img src="logo.png" width="240px;"></a></h2>
+		<input type="checkbox" id="chk">
+		<label for="chk" class="show-menu-btn">
+			<i class="fas fa-ellipsis-h"></i>
+		</label>
+		<ul class="menu">
+			<a href="Home.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<a href="donate.html">Donate</a>
+			<a href="Subject.html">Subject</a>
+			<label for="chk" class="hide-menu-btn">
+				<i class="fas fa-times"></i>
+			</label>
+		</ul>
+	</div>
+	<p><br><br></p>
+	<center><h2 class="content">Table of Content</h2></center>
+	<div class="sc">
+		<h2>Science</h2>
+		<h4><a href="body part.html">Body Part</a></h4>
+		<h4><a href="leverage.html">Leverage</a></h4>
+		<h4><a href="science physical.html">Physical</a></h4>
+	</div>
+	<div class="mm">
+		<h2>Mathematic</h2>
+		<h3><a href="Arithmetic.html">Arithmetic</a></h3>
+		<h3><a href="decimal.html">Decimal</a></h3>
+		<h3><a href="geometry.html">Geometry</a></h3>
+	</div>
+</body>
+</html>

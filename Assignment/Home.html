@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WebWix</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: "montserrat", sans-serif;
+	}
+	.header{
+		height: 100px;
+		background: #34495e;
+		padding: 0 20px;
+		color: #ffff;
+	}
+	.logo{
+		line-height: 100px;
+		float: left;
+		text-transform: uppercase;
+	}
+	.menu{
+		float: right;
+		line-height: 100px;
+	}
+	.menu a{
+		color: #ffff;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 0 10px;
+		transition: 0.4s;
+	}
+	.show-menu-btn, .hide-menu-btn{
+		transition: 0.4s;
+		font-size: 30px;
+		cursor: pointer;
+		display: none;
+	}
+	.show-menu-btn{
+		float: right;
+	}
+	.show-menu-btn i{
+		line-height: 100px;
+	}
+	.menu a:hover, .show-menu-btn, .hide-menu-btn{
+		color: #3498db;
+	}
+	#chk{
+		position: absolute;
+		visibility: hidden;
+		z-index: -1111;
+	}
+	body{
+		background-image: url("");
+	}
+	.title{
+		text-align: left;
+	}
+	#p1{
+		text-align: center;
+	}
+	#p2{
+		text-align: center;
+	}
+	.mm,.sc{
+		background-color: antiquewhite;
+		border: 15px solid #2981D2 ;
+		margin-left: 200px;
+		margin-right: 250px;
+		margin-top: 50px;
+		
+	}
+	h2.mm{
+		border-width: large;
+		padding: 70px;
+	}
+	h2.sc{
+		border-width: large;
+		padding: 70px;
+	}
+	.mm a{
+		text-decoration: none;
+		color: #5B3DFF;
+		text-transform: uppercase;
+	}
+	.sc a{
+		text-decoration: none;
+		color: #5B3DFF;
+		text-transform: uppercase;
+	}
+	.sc a:hover{
+		color: #1A1ADD;
+	}
+	.mm a:hover{
+		color: #1A1ADD;
+	}
+	#footer {
+		text-align: center;
+		background: #045CAC;
+	}
+	#footer a{
+		text-decoration: none;
+		color: #fff;
+		transition: 0.4s;
+	}
+	#footer a:hover{
+		color: #5B6DEB;
+	}
+	.video{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -1;
+	}
+	@media(min-aspect-ratio:16/9){
+		.video{
+			width: 100%;
+			height: auto;
+		}
+	}
+	@media(max-aspect-ratio:16/9){
+		.video{
+			width: 100%
+			height: auto;
+		}
+	}
+</style>
+</head>
+
+<body>
+	<div class="header">
+		<h2 class="logo"><img src="logo.png" width="240px;"></h2>
+		<input type="checkbox" id="chk">
+		<label for="chk" class="show-menu-btn">
+			<i class="fas fa-ellipsis-h"></i>
+		</label>
+		<ul class="menu">
+			<a href="Home.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<a href="donate.html">Donate</a>
+			<a href="Subject.html">Subject</a>
+			<label for="chk" class="hide-menu-btn">
+				<i class="fas fa-times"></i>
+			</label>
+		</ul>
+	</div>
+	<h2 class="mm" style="text-align:center">
+		<a href="Subject.html">Mathematic</a>
+		<p id="p1">Something you need to learn for confusing the world</p>
+	</h2>
+	<h2 class="sc" style="text-align:center">
+		<a href="Subject.html">Science</a>
+		<p id="p2">Something you need to learn for controlling the world</p>
+	</h2>
+	<p><br><hr></p>
+	<p id="footer"><br><br><a href="policy.html">Privacy Policy</a><br><br><br><br>
+	<video autoplay loop class="video" muted plays-inline>
+		<source src="video.mp4" type="video/mp4"
+	</video>
+	
+	
+</body>
+</html>

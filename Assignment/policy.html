@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>policy</title>
+	<style>
+		body{
+			background-image: url('back.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		*{
+		margin: 0;
+		padding: 0;
+		font-family: "montserrat", sans-serif;
+	}
+	.header{
+		height: 100px;
+		background: #34495e;
+		padding: 0 20px;
+		color: #ffff;
+	}
+	.logo{
+		line-height: 100px;
+		float: left;
+		text-transform: uppercase;
+	}
+	.menu{
+		float: right;
+		line-height: 100px;
+	}
+	.menu a{
+		color: #ffff;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 0 10px;
+		transition: 0.4s;
+	}
+	.show-menu-btn, .hide-menu-btn{
+		transition: 0.4s;
+		font-size: 30px;
+		cursor: pointer;
+		display: none;
+	}
+	.show-menu-btn{
+		float: right;
+	}
+	.show-menu-btn i{
+		line-height: 100px;
+	}
+	.menu a:hover, .show-menu-btn, .hide-menu-btn{
+		color: #3498db;
+	}
+	#chk{
+		position: absolute;
+		visibility: hidden;
+		z-index: -1111;
+	}
+		.policy{
+			text-align: justify;
+		}
+	
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h2 class="logo"><img src="logo.png" width="240px;"></h2>
+		<input type="checkbox" id="chk">
+		<label for="chk" class="show-menu-btn">
+			<i class="fas fa-ellipsis-h"></i>
+		</label>
+		<ul class="menu">
+			<a href="Home.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			<a href="donate.html">Donate</a>
+			<a href="Subject.html">Subject</a>
+			<label for="chk" class="hide-menu-btn">
+				<i class="fas fa-times"></i>
+			</label>
+		</ul>
+	</div>
+	<h3><br>Privacy Policy</h3>
+	<div class="policy">
+		<p><br>In our operation of the WebWix, and our provision of services to you and other users, we may collect, use, and retain information, including Personal Information, that you disclose to us. Our use and disclosure of Personal Information is described in this Policy. Our disclosures of Personal Information to our affiliates and other third parties are described in greater detail under the "When We Disclose Personal Information" heading below. In general, the types and amount of Personal Information we collect vary depending on the activity. We endeavor to limit the collection of personally identifiable information to information we believe is minimally necessary to achieve our stated collection purposes.</p>
+		<p><br>The information that we collect with these automated methods may include, for example, your IP address, information about how you interact with content, browser type, system type, device type, the content and pages that you access, the date and time you view pages, and the page from which you navigated to WebWix.</p>
+		<p><br>We may provide Personal Information to third parties for their use in performing internal business functions (e.g., email transmission, payment processing, customer service, maintenance, security, data analysis, beta testing, or data hosting) on our behalf. We require such third-parties to only collect and use Personal Information in accordance with this Policy, to maintain the confidentiality, security, and integrity of such Personal Information, and for no purpose other than providing us with our requested services.</p>
+	</div>
+</body>
+</html>
